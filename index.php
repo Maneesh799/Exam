@@ -49,7 +49,7 @@ echo "Welcome ".$_SESSION['username'];
         if (mysqli_query($connection, $query)) {
             echo "File uploaded successfully";
         } else {
-            die("Query failed: " . mysqli_error($connection));
+            // die("Query failed: " . mysqli_error($connection));
         }
     }
     if(isset($_POST['logout'])){
